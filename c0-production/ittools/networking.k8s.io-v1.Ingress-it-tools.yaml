@@ -1,0 +1,28 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+  labels:
+    app.kubernetes.io/name: it-tools
+    app.kubernetes.io/part-of: it-tools
+    dawex.net/environment: production
+  name: it-tools
+  namespace: tools
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: ittools.akira.fr
+    http:
+      paths:
+      - backend:
+          service:
+            name: it-tools
+            port:
+              name: http
+        path: /
+        pathType: ImplementationSpecific
+  tls:
+  - hosts:
+    - ittools.akira.fr
+    secretName: tls-it-tools

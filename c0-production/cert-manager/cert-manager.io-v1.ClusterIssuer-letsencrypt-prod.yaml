@@ -1,0 +1,19 @@
+apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+  annotations:
+    tanka.dev/namespaced: "false"
+  labels:
+    app.kubernetes.io/name: cert-manager
+    app.kubernetes.io/part-of: cert-manager
+  name: letsencrypt-prod
+spec:
+  acme:
+    email: nicolas@akira.fr
+    privateKeySecretRef:
+      name: letsencrypt-prod-private-key
+    server: https://acme-v02.api.letsencrypt.org/directory
+    solvers:
+    - http01:
+        ingress:
+          class: nginx

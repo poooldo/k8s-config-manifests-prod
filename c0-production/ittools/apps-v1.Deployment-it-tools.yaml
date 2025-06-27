@@ -1,0 +1,55 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app.kubernetes.io/name: it-tools
+    app.kubernetes.io/part-of: it-tools
+    dawex.net/environment: production
+  name: it-tools
+  namespace: tools
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: it-tools
+      app.kubernetes.io/part-of: it-tools
+      dawex.net/environment: production
+  strategy:
+    rollingUpdate:
+      maxSurge: 0
+      maxUnavailable: 1
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: it-tools
+        app.kubernetes.io/part-of: it-tools
+        dawex.net/environment: production
+    spec:
+      containers:
+      - image: ghcr.io/corentinth/it-tools:latest
+        imagePullPolicy: Always
+        livenessProbe:
+          httpGet:
+            path: /
+            port: http
+          initialDelaySeconds: 10
+          periodSeconds: 5
+          timeoutSeconds: 5
+        name: it-tools
+        ports:
+        - containerPort: 80
+          name: http
+        readinessProbe:
+          httpGet:
+            path: /
+            port: http
+          initialDelaySeconds: 10
+          periodSeconds: 5
+          timeoutSeconds: 5
+        resources:
+          limits:
+            cpu: 600m
+            memory: 500Mi
+          requests:
+            cpu: 500m
+            memory: 500Mi

@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app.kubernetes.io/name: it-tools
+    app.kubernetes.io/part-of: it-tools
+    dawex.net/environment: production
+  name: it-tools
+  namespace: tools
+spec:
+  ports:
+  - name: http
+    port: 80
+  selector:
+    app.kubernetes.io/name: it-tools
+    app.kubernetes.io/part-of: it-tools
+    dawex.net/environment: production

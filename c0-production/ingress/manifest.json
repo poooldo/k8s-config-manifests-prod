@@ -1,0 +1,21 @@
+{
+    "admissionregistration.k8s.io-v1.ValidatingWebhookConfiguration-ingress-nginx-admission.yaml": "environments/c0/production/ingress/main.jsonnet",
+    "apps-v1.Deployment-ingress-nginx-controller.yaml": "environments/c0/production/ingress/main.jsonnet",
+    "batch-v1.Job-ingress-nginx-admission-create.yaml": "environments/c0/production/ingress/main.jsonnet",
+    "batch-v1.Job-ingress-nginx-admission-patch.yaml": "environments/c0/production/ingress/main.jsonnet",
+    "networking.k8s.io-v1.IngressClass-nginx.yaml": "environments/c0/production/ingress/main.jsonnet",
+    "rbac.authorization.k8s.io-v1.ClusterRole-ingress-nginx-admission.yaml": "environments/c0/production/ingress/main.jsonnet",
+    "rbac.authorization.k8s.io-v1.ClusterRole-ingress-nginx.yaml": "environments/c0/production/ingress/main.jsonnet",
+    "rbac.authorization.k8s.io-v1.ClusterRoleBinding-ingress-nginx-admission.yaml": "environments/c0/production/ingress/main.jsonnet",
+    "rbac.authorization.k8s.io-v1.ClusterRoleBinding-ingress-nginx.yaml": "environments/c0/production/ingress/main.jsonnet",
+    "rbac.authorization.k8s.io-v1.Role-ingress-nginx-admission.yaml": "environments/c0/production/ingress/main.jsonnet",
+    "rbac.authorization.k8s.io-v1.Role-ingress-nginx.yaml": "environments/c0/production/ingress/main.jsonnet",
+    "rbac.authorization.k8s.io-v1.RoleBinding-ingress-nginx-admission.yaml": "environments/c0/production/ingress/main.jsonnet",
+    "rbac.authorization.k8s.io-v1.RoleBinding-ingress-nginx.yaml": "environments/c0/production/ingress/main.jsonnet",
+    "v1.ConfigMap-ingress-nginx-controller.yaml": "environments/c0/production/ingress/main.jsonnet",
+    "v1.Namespace-ingress-nginx.yaml": "environments/c0/production/ingress/main.jsonnet",
+    "v1.Service-ingress-nginx-controller-admission.yaml": "environments/c0/production/ingress/main.jsonnet",
+    "v1.Service-ingress-nginx-controller.yaml": "environments/c0/production/ingress/main.jsonnet",
+    "v1.ServiceAccount-ingress-nginx-admission.yaml": "environments/c0/production/ingress/main.jsonnet",
+    "v1.ServiceAccount-ingress-nginx.yaml": "environments/c0/production/ingress/main.jsonnet"
+}

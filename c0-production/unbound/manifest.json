@@ -1,0 +1,10 @@
+{
+    "apps-v1.Deployment-unbound.yaml": "environments/c0/production/unbound/main.jsonnet",
+    "networking.k8s.io-v1beta1.Ingress-recursor-unbound.yaml": "environments/c0/production/unbound/main.jsonnet",
+    "v1.ConfigMap-recursor-unbound.yaml": "environments/c0/production/unbound/main.jsonnet",
+    "v1.Namespace-recursor.yaml": "environments/c0/production/unbound/main.jsonnet",
+    "v1.Pod-recursor-unbound-test-connection.yaml": "environments/c0/production/unbound/main.jsonnet",
+    "v1.Service-unbound-tcp.yaml": "environments/c0/production/unbound/main.jsonnet",
+    "v1.Service-unbound-udp.yaml": "environments/c0/production/unbound/main.jsonnet",
+    "v1.ServiceAccount-recursor-unbound.yaml": "environments/c0/production/unbound/main.jsonnet"
+}
