@@ -1,0 +1,7 @@
+{
+    "kustomize.toolkit.fluxcd.io-v1.Kustomization-cert-manager.yaml": "environments/c0/production/flux/main.jsonnet",
+    "kustomize.toolkit.fluxcd.io-v1.Kustomization-ingress-nginx.yaml": "environments/c0/production/flux/main.jsonnet",
+    "kustomize.toolkit.fluxcd.io-v1.Kustomization-ittools.yaml": "environments/c0/production/flux/main.jsonnet",
+    "kustomize.toolkit.fluxcd.io-v1.Kustomization-sealed-secrets.yaml": "environments/c0/production/flux/main.jsonnet",
+    "networking.k8s.io-v1.NetworkPolicy-allow-acme.yaml": "environments/c0/production/flux/main.jsonnet"
+}
