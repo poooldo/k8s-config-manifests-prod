@@ -5,7 +5,7 @@ metadata:
   namespace: cert-manager
 spec:
   interval: 30m
-  path: ./c0/cert-manager
+  path: ./c0-production/cert-manager
   prune: true
   retryInterval: 10s
   sourceRef:

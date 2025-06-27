@@ -5,7 +5,7 @@ metadata:
   namespace: ingress-nginx
 spec:
   interval: 30m
-  path: ./c0/ingress-nginx
+  path: ./c0-production/ingress-nginx
   prune: true
   retryInterval: 10s
   sourceRef:
